@@ -1,0 +1,136 @@
+/* 
+
+Programa: Pokedex - Buscador de Pokemones de 
+primera generacion en su estado base.
+
+Creado por: JOVEN JIMENEZ ANGEL CRISTIAN
+SISTEMAS DE INFORMACION | 1758 
+
+*/
+
+/*
+
+Aqui van a estar todos los estilos 
+para nuestros textos, labels, botones
+y celdas de nuestro formulario.
+
+Importamos una fuente por parte de Google Fonts
+
+Asignamos a nuestro HTML y Body un background,
+alineamos los textos y le asignamos la fuente
+a nuestro texto
+
+Para las etiquetas h1, label, p y a, les asignamos
+un color de fuente, un tamaño de texto, si esta en
+negritas la fuente, asi como tambien le quitamos la
+linea horizontal que tiene el texto en la etiqueta 'a'.
+
+Para nuestra tabla, le asignamos varios estilos como el
+texto centrado, un tamaño de texto, margin personalizado y
+un background para las celdas de nuestra tabla
+
+
+Para nuestras celdas y botones, les asignamos un borde,
+un color y un background, tambien le cambiamos el tamaño 
+y color del texto, le añadimos un margin y una transicion
+o animacion de cuando cargan los botones por primera vez en
+la pagina, etc. 
+
+Ahora, cuando el cursor del mouse esta sobre
+alguna celda o boton o cuando haya texto en alguna celda,
+esta hara una animacion de cambio de color de texto y de color
+del background de la celda o boton.
+
+*/
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+html, body 
+{
+    background: linear-gradient(to bottom, #00d0ff 0%, #021842 100%);
+    background-attachment: fixed;
+    text-align: center;
+    font-family: "Karla";
+}
+
+h1
+{
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+label, p, a
+{
+    color: white;
+    font-size: 24px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+table 
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 0;
+    color: white;
+}
+
+th 
+{
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+tr
+{
+    font-size: 18px;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=password],
+button
+{
+    display: inline-block;
+    border-radius: 12px;
+    background-color: rgba(22, 22, 22, 0.5);
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 12px;
+    /* width: 512px; */
+    transition: all 0.5s;
+    margin: 5px;
+    text-decoration: none;
+    border: none;
+    overflow: visible;
+}
+
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=text]:hover,
+input[type=number]:hover,
+input[type=email]:hover,
+input[type=password]:hover,
+button:hover
+{
+	transition: all 0.5s;
+	background-color: #ddd;
+	color: #000;
+}
+
+a:hover
+{
+    transition: all 0.5s;
+	color: #000;
+}
